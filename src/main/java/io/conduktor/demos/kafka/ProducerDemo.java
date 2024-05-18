@@ -18,10 +18,8 @@ public class ProducerDemo {
     public static void main(String[] args) {
         log.info("I am a Kafka Producer");
 
-        String bootstrapServers = System.getenv("KAFKA_BOOTSRAP_SERVER");
+        String bootstrapServers = System.getenv("KAFKA_BOOTSTRAP_SERVER");
         System.out.println("bootstrapServers: " + bootstrapServers);
-
-
 
         // create Producer properties
         Properties properties = new Properties();
@@ -36,8 +34,7 @@ public class ProducerDemo {
         KafkaProducer<String, String> producer = new KafkaProducer<>(properties);
 
         // create a producer record
-        ProducerRecord<String, String> producerRecord =
-                new ProducerRecord<>("demo_java", "hello world");
+        ProducerRecord<String, String> producerRecord = new ProducerRecord<>("demo_java", "hello world");
 
         // send data - asynchronous
         producer.send(producerRecord);
