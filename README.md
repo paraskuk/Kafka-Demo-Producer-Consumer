@@ -18,6 +18,7 @@ Source is from [here](https://www.conduktor.io/kafka/complete-kafka-producer-wit
 ## Features
 
 - Kafka Producer
+- Kafka Consumer
 
 
 ## Installation
