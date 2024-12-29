@@ -25,10 +25,7 @@ Source is from [here](https://www.conduktor.io/kafka/complete-kafka-producer-wit
 To install this project, follow these steps:
 
 1. Clone the repository on GitHub CLI:
-   ```bash
-   gh repo clone paraskuk/kafkademoproducer
+   ```sh
+   [gh repo clone paraskuk/kafkademoproducer](https://github.com/paraskuk/Kafka-Demo-Producer-Consumer.git)
    ```
-   or with normal git clone:
-   ```bash
-   https://github.com/paraskuk/kafkademoproducer.git
-   ```
+
